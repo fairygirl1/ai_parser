@@ -1,0 +1,23 @@
+[
+    {"id":"10","name":"The Simulation","website":"https://fablesimulation.com/"},
+    {"id":"37","name":"Luma AI","website":"https://lumalabs.ai/"},
+    {"id":"50","name":"G3DAI {Jedi}","website":"https://g3d.ai/"},
+    {"id":"157","name":"Scenario","website":"https://www.scenario.gg/"},
+    {"id":"193","name":"Pixela AI","website":"https://pixela.ai/"},
+    {"id":"251","name":"GET3D (Nvidia)","website":"https://nv-tlabs.github.io/GET3D/"},
+    {"id":"261","name":"GetFloorPlan","website":"https://getfloorplan.com/"},
+    {"id":"458","name":"Imagine 3D","website":"https://captures.lumalabs.ai/imagine"},
+    {"id":"461","name":"Sloyd","website":"https://www.sloyd.ai/"},
+    {"id":"822","name":"Texture Lab","website":"https://www.texturelab.xyz/"},
+    {"id":"855","name":"Latent Labs","website":"https://www.latentlabs.art/"},
+    {"id":"902","name":"Masterpiece Studio","website":"https://masterpiecestudio.com/"},
+    {"id":"933","name":"DeepMotion","website":"https://www.deepmotion.com/"},
+    {"id":"947","name":"Plask","website":"https://plask.ai/"},
+    {"id":"948","name":"Poly","website":"https://withpoly.com/"},
+    {"id":"965","name":"Kaedim","website":"https://www.kaedim3d.com/"},
+    {"id":"982","name":"Mirageml","website":"https://www.mirageml.com/"},
+    {"id":"987","name":"Leonardo.Ai","website":"https://leonardo.ai/"},
+    {"id":"993","name":"PrometheanAI","website":"https://www.prometheanai.com/"},
+    {"id":"1084","name":"Ponzu","website":"https://www.ponzu.gg/"},
+    {"id":"626","name":"Rose AI","website":"https://rose.ai/"}
+]
