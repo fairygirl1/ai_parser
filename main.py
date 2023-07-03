@@ -1,6 +1,9 @@
 import json
+import logging
 import requests
 from bs4 import BeautifulSoup
+
+logging.basicConfig(filename='logs.txt', level=logging.INFO)
 
 def extract_lines():
     with open('urls.json', 'r') as f:
@@ -15,10 +18,11 @@ def parse_main_page(url, results):
         response = requests.get(url)
         response.raise_for_status()  # Проверяем статусный код ответа
     except requests.exceptions.RequestException as e:
-        print(f"Error occurred while fetching {url}: {e}")
+        logging.error(f"Error occurred while fetching {url}: {e}")
         return None
 
-    print(f"{url} {response.status_code}")
+    logging.info(f"{url} {response.status_code}")
+    print('☁ ▅▒░☼‿☼░▒▅ ☁')
     soup = BeautifulSoup(response.content, 'html.parser')
 
     soup = remove_nav_and_footer(soup)
@@ -27,7 +31,7 @@ def parse_main_page(url, results):
     
     if response.history:
         redirect = response.url
-        print(f"The URL {url} has {len(response.history)} redirects to {redirect}")
+        logging.info(f"The URL {url} has {len(response.history)} redirects to {redirect}")
         if "redirect link" not in results[url]:
             results[url]["redirect link"] = []
         results[url]["redirect link"].insert(0, redirect)  # Добавляем новую ссылку в список по ключу "redirect link"
